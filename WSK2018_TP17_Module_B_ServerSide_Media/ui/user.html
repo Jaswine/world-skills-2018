@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="language" content="en" />
+
+	<link rel="stylesheet" type="text/css" href="src/css/core.css" media="screen, projection" />
+	<link rel="stylesheet" type="text/css" href="src/css/principal.css" />
+	<link rel="stylesheet" type="text/css" href="src/css/nav.css" />
+	<link rel="stylesheet" type="text/css" href="src/css/content.css" />
+	<link rel="stylesheet" type="text/css" href="src/css/form.css" />
+	<link rel="stylesheet" type="text/css" href="src/css/footer.css" />
+	
+	<title>WorldSkills Kazakhstan / ASTANA TRANSPORT COMPANY</title>
+	
+</head>
+
+<body>
+
+<div class="container" id="page">
+
+	<a href="index.html">
+	<div id="header">
+		<div id="logo"><!--WorldSkills Leipzig / Leipziger Verkehrsbetriebe--></div>
+	</div></a>
+
+	<div id="mainmenu">
+	
+	<ul>
+
+		<li>
+			<a href="line.html" title="Line"><span style="background-image: url(src/images/line.png)"></span><!--Line--></a>
+		</li>
+		<li>
+			<a href="station.html" title="Station"><span style="background-image: url(src/images/station.png)"></span><!--Station--></a>
+		</li>
+		<li>
+			<a href="vehicle.html" title="Vehicle"><span style="background-image: url(src/images/vehicle.png)"></span><!--Vehicle--></a>
+		</li>
+		<li>
+			<a href="Driver.html" title="Driver"><span style="background-image: url(src/images/Driver.png)"></span><!--Driver--></a>
+		</li>
+		<li>
+			<a href="xml.html" title="XML-XSD"><span style="background-image: url(src/images/xml.png)"></span><!--XML Schema--></a>
+		</li>
+		<li>
+			<a href="user.html" title="User"><span style="background-image: url(src/images/user.png)"></span><!--User--></a>
+		</li>
+	</ul>
+	
+	<!-- Login / Logout -->
+    <div id='access'>
+        <div>Webmaster (<a href="#">Logout</a>)</div> 
+    </div>
+</div>
+
+<!-- mainmenu -->
+			<div class="breadcrumbs">
+<a href="#">Home</a> &raquo; <a href="#">User</a> &raquo; <span>Create</span></div><!-- breadcrumbs -->
+	
+	<div class="span-19">
+    <div id="content">
+		
+<h1>Create User</h1>
+
+
+<div class="form">
+
+    <form id="user-form" action="/pruebas/module_e_1/user/create.php" method="post">
+    <p class="note">Fields with <span class="required">*</span> are required.</p>
+
+    
+    <div class="row">
+        <label for="User_name" class="required">Name <span class="required">*</span></label>        <input size="50" maxlength="50" name="User[name]" id="User_name" type="text">            </div>
+
+    <div class="row">
+        <label for="User_gender" class="required">Gender <span class="required">*</span></label>       
+        <select name="Driver[type_vehicle]" id="Driver_type_vehicle">
+<option value="">Male</option>
+<option value="">Female</option>
+</select>    
+        
+        
+                    </div>
+
+    <div class="row">
+        <label for="User_birth_date" class="required">Birth Date <span class="required">*</span></label>        <input id="User_birth_date" name="User[birth_date]" type="text" class="hasDatepicker">                    </div>
+
+    <div class="row">
+        <label for="User_email" class="required">Email <span class="required">*</span></label>        <input size="50" maxlength="50" name="User[email]" id="User_email" type="text">            </div>
+
+    <div class="row">
+        <label for="User_login" class="required">Login <span class="required">*</span></label>        <input size="40" maxlength="40" name="User[login]" id="User_login" type="text">            </div>
+
+    <div class="row">
+        <label for="User_password" class="required">Password <span class="required">*</span></label>        <input size="50" maxlength="50" name="User[password]" id="User_password" type="password">            </div>
+
+    <div class="row buttons">
+        <input type="submit" name="yt0" value="Create">    </div>
+
+    </form>
+</div><!-- form -->	</div>
+    <!-- content -->
+
+
+
+</div>
+<div class="span-5 last">
+	<div id="sidebar">
+	<div class="portlet" >
+<div class="portlet-decoration">
+<div class="portlet-title">Operations</div>
+</div>
+<div class="portlet-content">
+<ul class="operations" >
+<li><a href="#list">List User</a></li>
+<li><a href="#manage">Manage User</a></li>
+</ul></div>
+</div>	</div><!-- sidebar -->
+</div>
+
+	<div class="clear"></div>
+
+	<div id="footer">
+		<ul>
+                    <li class="sitemap"><a href="#">Site Map</a></li>
+                    <li class="copyr"><a href="#">Copyright &copy; 2018 by ATC</a></li>
+                    <li class="allright"><a href="#">All Rights Reserved. <br>By WorldSkills International</a></li>
+                </ul>
+	</div><!-- footer -->
+
+</div><!-- page -->
+
+</body>
+</html>
