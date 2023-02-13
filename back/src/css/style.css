@@ -1,4 +1,7 @@
 .message {
    padding: .4rem .8rem;
-   border: 2px solid gainsboro;
+   /* border: 2px solid rgb(0,0,0,.8);
+   margin-left: 10px;
+   box-shadow: 0 0 1px 5px black; */
+   max-width: 400px;
 }
