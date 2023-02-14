@@ -39,7 +39,20 @@
                             </div>
 
                             <div class="row">
-                                <label for="Line_id" class="required">Line Id<span class="required">*</span></label>		<input name="line_id" id="Line_id" type="text">			</div>
+                                <label for="Vehicle_type">Line</label>	
+                                <select name="line__type" id="Line_type">
+                                    <option disabled selected>Get Line</option>
+                                  <?php
+                                    include 'db/connection.php'; 
+
+                                    $all_lines  = $conn->query("SELECT * FROM line");
+
+                                    foreach ($all_lines as $line) {
+                                        echo "<option value=".$line['id'].">".$line['code']."</option>";
+                                    }
+                                  ?>
+                                </select> 			
+                            </div>
 
                             <div class="row">
                                 <label for="Gos_Number" class="required">Gos Number <span class="required">*</span></label>		<input name="gos_number" id="Gos_Number" type="text">			</div>
@@ -56,9 +69,9 @@
                                 $capacity = $_POST['capacity'];
                                 $type = $_POST['type'];
                                 $gos_number=$_POST['gos_number'];
-                                $line_id = $_POST['line_id'];
+                                $line_id = $_POST['line__type'];
 
-                                $sql = "INSERT INTO vehicle (name, capacity, type, line_id, gos_number) VALUES ('$name', '$capacity', '$type', $'line_id', '$gos_number' )";
+                                $sql = "INSERT INTO vehicle (name, capacity, type, line_id, gos_number) VALUES ('$name', $capacity, '$type', $line_id, '$gos_number' )";
                                 if ($conn->query($sql) == TRUE) {
                                     echo "<p class='message'>Vehicle has been created successfully!</p>";
                                 } else {
@@ -70,8 +83,6 @@
                         ?>
                     </div><!-- form -->	</div>
                 <!-- content -->
-
-
 
             </div>
             <div class="span-5 last">
