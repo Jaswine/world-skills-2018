@@ -29,7 +29,19 @@
 
                 <!-- Login / Logout -->
                 <div id='access'>
-                    <div>Webmaster (<a href="#">Logout</a>)</div> 
+                    <?php 
+                    include 'db/connection.php'; 
+
+                    if ($login == 'true') {
+                        echo "<form>Webmaster (<input value='Logout' name='logout' type='submit' />)</form>";
+                    } else {
+                        echo "<div>Webmaster (<a href='/signIn.php'>SIgn In</a>)</div>".$login;
+                    }
+                    
+                    if (isset($_POST['logout'])) {
+                        $login = 'false';
+                    }
+                      ?>
                 </div>
             </div>
 

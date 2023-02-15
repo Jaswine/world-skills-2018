@@ -12,13 +12,34 @@
 	<div class="span-19">
 	
 	
-	<div id="content">
+	<form id="content" method="post">
 		
 <h1>XML Schema</h1>
 
-<a href="/pruebas/module_e_1/xml/download.php">Download XML</a><br><a href="/pruebas/module_e_1/xml/display.php">Display XML</a>	</div><!-- content -->
+<input type = "submit" name="download" value=" Download XML" />
+<input type = "submit" name="display" value=" Display XML" />
 
+	</form><!-- content -->
+	<?php
+	include "db/connection.php";
 
+if (isset($_POST['download'])) {
+	header('Content-Disposition: attachment;filename=lvb_system.xml'); 
+
+	$name = strftime('backup_%m_%d_%Y.xml');
+    header('Content-Disposition: attachment;filename=' . $name);
+    header('Content-Type: text/xml');
+
+    echo $dom->saveXML();
+
+	// $user=$conn -> query("SELECT * FROM user ");
+
+	// $xml = new DOMDocument("1.0");
+
+	// $name = strftime('backup_%m_%d_%Y.xml');
+   //  header('Content-Type: text/xml');
+}
+?>
 
 </div>
 <div class="span-5 last">
@@ -27,11 +48,11 @@
 <div class="portlet-decoration">
 <div class="portlet-title">Operations</div>
 </div>
-<div class="portlet-content">
+<form class="portlet-content">
 <ul class="operations" >
-<li><a href="#list"> Download XML </a></li>
-<li><a href="#manage">Display XML</a></li>
-</ul></div>
+<li><a > Download XML </a></li>
+<li><a>Display XML</a></li>
+</ul></form>
 </div>	</div><!-- sidebar -->
 </div>
 
