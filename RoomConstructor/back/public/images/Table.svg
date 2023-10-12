@@ -1,0 +1,22 @@
+<svg width="200" height="73" viewBox="0 0 200 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="7" y="51" width="16" height="18" fill="#943737"/>
+<rect x="178" y="52" width="16" height="17" fill="#943737"/>
+<rect x="162" y="51" width="12" height="10" fill="#722C2C"/>
+<rect x="6" y="1" width="193" height="51" fill="#943737"/>
+<path d="M6 71L6 51" stroke="white" stroke-width="6"/>
+<rect x="20" y="51" width="16" height="9" fill="#722C2C"/>
+<path d="M21 71L21 52" stroke="white" stroke-width="6"/>
+<path d="M2.99896 51.7132L199.006 51.2496" stroke="white" stroke-width="6"/>
+<line y1="-3" x2="199.005" y2="-3" transform="matrix(0.999993 -0.00384739 0.00370115 0.999993 0.498352 6.83812)" stroke="white" stroke-width="6"/>
+<line x1="4" y1="53" x2="4" y2="1" stroke="white" stroke-width="6"/>
+<path d="M6 70L6 52" stroke="white" stroke-width="6"/>
+<path d="M6 70H24" stroke="white" stroke-width="6"/>
+<path d="M177 70H195" stroke="white" stroke-width="6"/>
+<path d="M175 71V53" stroke="white" stroke-width="6"/>
+<path d="M197 71L197 54" stroke="white" stroke-width="6"/>
+<path d="M39 62H22" stroke="white" stroke-width="6"/>
+<path d="M161 60V52" stroke="white" stroke-width="6"/>
+<path d="M177 62H158" stroke="white" stroke-width="6"/>
+<path d="M36 60V52" stroke="white" stroke-width="6"/>
+<line x1="197" y1="55" x2="197" y2="1" stroke="white" stroke-width="6"/>
+</svg>
