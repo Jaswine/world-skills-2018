@@ -1,0 +1,83 @@
+.home {
+   @apply w-full flex justify-between items-start ;
+}
+.easingOptions {
+   @apply w-1/2 p-2 flex justify-center items-center flex-col;
+}
+.easingOptions_all {
+   @apply flex flex-wrap justify-start
+}
+.chart_slider {
+   @apply w-1/2 flex flex-col justify-center items-center p-2; 
+}
+.chart {
+   width: 400px;
+   height: 400px;
+   @apply mb-5
+}
+.slider {
+   @apply w-full mb-4 rounded-md bg-gray-800 ;
+   appearance: none;
+   max-width: 400px;
+}
+.slider::-webkit-slider-thumb {
+   @apply bg-purple-600 cursor-pointer w-5 h-5 rounded-xl scale-150;
+   appearance: none;
+}
+.option {
+   @apply m-1 w-full bg-gray-900 p-2 rounded-md relative;
+   max-width: 48%;
+   transition: all .3s linear;
+}
+.option * {
+   transition: all .3s linear;
+}
+.option__header {
+   @apply flex justify-between items-center w-full mb-1
+}
+.option__header input{
+   @apply w-5 h-5 bg-gray-700 rounded-sm;
+   appearance: none;
+}
+.option__header input:checked{
+   @apply bg-purple-600 ;
+   appearance: none;
+}
+.option__header h3 {
+   @apply font-bold text-lg
+}
+.option span {
+   @apply opacity-0 absolute flex p-2 flex-col justify-center items-center
+}
+.option:hover span {
+   @apply opacity-100;
+}
+.option:hover input {
+   @apply opacity-30
+}
+.option:hover p {
+   @apply opacity-30
+}
+.option:hover h3 {
+   @apply opacity-30
+
+}
+.up__fun {
+   @apply w-full;
+   display: none;
+}
+
+@media screen and (max-width: 600px) {
+   .home {
+      @apply flex-col-reverse;
+   }
+   .easingOptions {
+      @apply w-full
+   }
+   .chart_slider {
+      @apply w-full
+   }
+   .up__fun {
+      @apply flex w-full justify-end p-4 items-center
+   }
+}

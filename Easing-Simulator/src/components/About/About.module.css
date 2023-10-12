@@ -1,0 +1,5 @@
+.about {
+   @apply flex justify-center items-center flex-col fixed top-16 z-30 p-2 pr-10 pl-10 bg-black shadow-md shadow-gray-600;
+   transition: all .6s linear;
+   width: 90%;
+}

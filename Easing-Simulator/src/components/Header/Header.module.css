@@ -1,0 +1,5 @@
+.header {
+   @apply flex justify-end items-center w-full border-b-2  h-16;
+   padding:  10px 5%;
+   border: 2px solid rgb(254,254,254, .2);
+}

@@ -1,0 +1,6 @@
+.NotFound {
+   @apply flex justify-center items-center flex-col w-screen h-screen ;
+}
+.NotFound h2 {
+   @apply text-3xl font-bold;
+}
